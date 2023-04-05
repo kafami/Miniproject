@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/index.css" />
+    </head>
+    <body>
+        <script src="/jss/index.js"></script>
+        <!-- Title -->
+        <h1 class="title">Welcome to Katik</h1>
+        <p class="subtitle">
+            Sebuah web sederhana Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni cumque laborum harum repellat, neque provident sint alias at aut eveniet deleniti ab sequi sit maiores. Consectetur dicta inventore quis quibusdam!
+        </p>
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="menu">
+                    <a href="/index.html" class="menu-triangle">Segitiga</a>
+                    <a href="/html/jajargenjang.html" class="menu-parallelogram">Jajargenjang</a>
+                </div>
+            </nav>
+        </header>
+        <!-- Main page -->
+        <main>
+            <section id="triangle">
+                <div class="card-triangle">
+                    <div class="card-title">
+                        <h2>Segitiga</h2>
+                    </div>
+                    <img src="/assets/Rumus-Luas-Segitiga.jpg" alt="" class="pic-Triangle">
+                    <div>
+                        <h6>Rumus Luas</h6>
+                        <p>L = 1/2 x T x A</p>
+                    </div>
+                    <div>
+                        <p>Dimana</p>
+                        <p>L = Luas</p>
+                        <p>T = Tinggi</p>
+                        <p>A = Alas</p>
+                    </div>
+                    <div id="calculation-form">
+                        <form id="form" class="triangle-form">
+                            <select id="operator" onclick="disable();">
+                                <option value="area">Calculate the area of the Triangle</option>
+                                <option value="pirimeter">Calculate the Circumference of the Triangle</option>
+                            </select>
+                            <input type="number" id="num1" placeholder="Sisi A">
+                            <input type="number" id="num2" placeholder="Sisi B">
+                            <input type="number" disabled="disabled" id="num3" placeholder="Sisi C">
+                            <button type="submit" class="triangle-button"
+                            onclick="return calculate()" 
+                            >Hitung
+                            </button>
+                            <button type="reset" id="reset" onclick="reset()">Reset</button>
+                            <input type="text" id="result" placeholder="Hasil" readonly="read">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+    <!-- Footer -->
+    <footer>
+        <p>Dibuat oleh <a href="https://www.instagram.com/kafa_mi/">Kaffa Emirudin</a></p>
+    </footer>
+    </body>
+</html>
